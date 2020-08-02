@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
     <title>About Me</title>
 </head>
@@ -29,7 +30,7 @@
 
         </div>
 
-        <div class="content-wrapper">
+        <div class="about-content-wrapper">
             <div class="two-column-wrapper">
                 <div class="profile-imgage-wrapper">
                     <img src="../images/profile.jpg" class="profile-picture">
@@ -39,15 +40,53 @@
                     <h1>Hi, thanks for visiting my site.</h1>
 
                     <p>
-                    I am a recent college graduate eager to get into the world of software engineering.
+                    I am a recent college graduate eager to get into the world of software
+                    engineering.
                     </p>
                     <p>
-                    I recieved my B.S. in Mathematics with a minor in physics in 2019 from Arizona State University.
+                    I recieved my B.S. in Mathematics with a minor in physics in 2019 from Arizona
+                    State University.
 
                     </p>
                 </div>
             </div>
+
         </div>
     </div>
+
+    <footer class="about-footer">
+        <h3 style="color: white;">Get in touch</h3>
+        <div class="media-wrapper">
+            <div class="icon-wrapper">
+                <a href="https://www.linkedin.com/in/juanrosales96" class="fa fa-linkedin"
+                style="font-size: 30px; text-decoration: none;"></a>
+            </div>
+            <div class="icon-wrapper">
+            
+                <a href="https://github.com/JuanRubi" class="fa fa-github"
+                style="font-size: 30px; text-decoration: none;"></a>
+                
+
+            </div>
+        </div>
+        <p style="color: white;">Juan Rosales</p>
+    </footer>
+
 </body>
+
+<script>
+    const iconWrapper = document.querySelectorAll('.icon-wrapper')
+
+    // This creates the hover effect, mouseover in javascript. //
+    iconWrapper.forEach(iconWrapper => {
+        iconWrapper.addEventListener('mouseover', () => {
+            iconWrapper.childNodes[1].classList.add('img-darken');
+        })
+
+        iconWrapper.addEventListener('mouseout', () => {
+            iconWrapper.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+
 </html>

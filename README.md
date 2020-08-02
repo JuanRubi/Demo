@@ -1,12 +1,9 @@
-# Portfolio Demo
+# Portfolio Description
 
-This repository contatins my portfolio. I have only created the home page and the about me page. The image links in the home page are not linked to projects yet.
+This contatins my portfolio (a work in progress). I have only created the Home page and the About Me page. The image links in the home page are not linked to projects yet.
 
 
-## Modification
+## Update
 
-I have now accessed this repository using VScode and added the code files of my portfolio. 
-
-## Learning Git Branch
-
-This modification was to show how Git branching works. 
+I haved added working links to social media in the About page to GitHub and LinkedIn. 
+ 

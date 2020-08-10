@@ -7,3 +7,7 @@ This contatins my portfolio (a work in progress). I have only created the Home p
 
 I haved added working links to social media in the About page to GitHub and LinkedIn. 
  
+## Git Merge Conflict
+
+This update was to see what happens and how to resolve a merge conflict.
+Practicing undoing.

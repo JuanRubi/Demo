@@ -1,3 +1,4 @@
+
 /* ----------------------------       MASTER STYLES       ----------------------------- */
 .body {
     font-family: sans-serif;
@@ -113,63 +114,42 @@
 
 /* -------------------------------      ABOUT ME STYLES        ------------------------------ */
 .about-content-wrapper {
+    width: 90%;
+    max-width: 1400px;
+    margin: 2rem auto;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-}
-.contact-me {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    margin-left: 10vw;
+    justify-content: space-between;
 }
 
-.two-column-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.profile-image-wrapper img {
-    width: 100%;
+.profile-image-wrapper {
+    width: 40%;
 }
 
 .profile-picture {
-    height: 55%;
-    max-height: 65%;
-    width: 60%;
-    max-width: 30em;
-
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10vh;
+    height: auto;
+    max-height: 35rem;
+    width: 90%;
 }
 
 .profile-content-wrapper {
-    padding: 20px;
+    width: 50%;
+    margin: 2rem;
 }
 
 .profile-content-wrapper h1 {
-    color: rgb(0, 0, 0);
+    color: #147291;
 
 }
 
 .profile-content-wrapper p {
     color: rgb(87, 87, 87);
-
+    font-size: 1.1rem;
 }
 
 /* ---------------------------      FOOTER STYLES       ------------------------------- */
 .about-footer {
     background: rgb(117, 117, 117);
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 15vh;
-
+    height: 10rem;
     text-align: center;
 }
 

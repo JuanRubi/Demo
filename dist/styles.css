@@ -2,13 +2,23 @@
 /* ----------------------------       MASTER STYLES       ----------------------------- */
 body {
     font-family: sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
 }
 
 /* -------------------------        THE NAVIGATION BAR      ------------------------------- */
 .nav-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;     /* Adds spacing between items */
-    padding: 38px;
+    padding-top: 2rem;
 }
 
 .left-side {
@@ -16,19 +26,19 @@ body {
 }
 
 .nav-wrapper > .left-side > div {
-    margin-right: 20px;
-    font-size: 0.9em;
+    margin-right: 1.2rem;
+    font-size: 1em;
     text-transform: uppercase;
 }
 
 .nav-link-wrapper {
-    height: 22px;
+    height: 1.1rem;
     border-bottom: 1px solid transparent;
     transition: border-bottom 0.5s;
 }
 
 .nav-link-wrapper a {
-    color: rgb(150, 150, 150);
+    color: rgb(121, 121, 121);
     text-decoration: none;
     transition: color 0.5s;
 }
@@ -55,7 +65,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;  /* 3 columns. */
     max-width: 1500px;
-    margin: 0 auto;
+    margin: 2rem auto;
 }
 
 .portfolio-item-wrapper {
@@ -88,7 +98,6 @@ body {
     text-align: center;
 
     padding: 2vw 5vw;
-    border: 1px solid blue;
 }
 
 .logo-wrapper img{
@@ -156,6 +165,13 @@ footer
     text-align: center;
 }
 
+.about-footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
 h3 {
     font-weight: 300;
     padding-top: 1rem;
@@ -177,4 +193,3 @@ h3 {
     padding: 0.3rem;
     transition: ease-in;
 }
-

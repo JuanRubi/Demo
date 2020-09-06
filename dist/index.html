@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
     <title>Juan Rosales Portfolio</title>
 </head>
+
 <body>
     <div class="container">
         <div class="nav-wrapper">
@@ -204,6 +206,24 @@
             </div>
         </div>
     </div>
+    <!-----------------     END OF CONTAINER        ----------------->
+
+    <footer>
+        <h3>Get in touch</h3>
+        <div class="media-wrapper">
+            <div class="icon-wrapper">
+                <a href="https://www.linkedin.com/in/juanrosales96" class="fa fa-linkedin"
+                style="font-size: 30px; text-decoration: none;"></a>
+            </div>
+            <div class="icon-wrapper">
+            
+                <a href="https://github.com/JuanRubi" class="fa fa-github"
+                style="font-size: 30px; text-decoration: none;"></a>
+    
+            </div>
+        </div>
+        <p>Juan Rosales</p>
+    </footer>
 </body>
 
 <script>
@@ -217,6 +237,20 @@
 
         portfolioItem.addEventListener('mouseout', () => {
             portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+
+
+    const iconWrapper = document.querySelectorAll('.icon-wrapper')
+
+// This creates the hover effect, mouseover in javascript. //
+    iconWrapper.forEach(iconWrapper => {
+        iconWrapper.addEventListener('mouseover', () => {
+            iconWrapper.childNodes[1].classList.add('img-darken');
+        })
+
+        iconWrapper.addEventListener('mouseout', () => {
+            iconWrapper.childNodes[1].classList.remove('img-darken');
         })
     })
 </script>

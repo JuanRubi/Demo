@@ -1,0 +1,76 @@
+
+/*------------------         MASTER STYLES       ------------------*/
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    border: 1px solid black;
+}
+
+
+/*-------------         NAVIGATION BAR STYLES       ---------------*/
+
+header {
+    height: 12rem;
+    background-color: #ececec;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    font-size: 1.4rem;
+    margin: 0 auto;
+    display: flex;
+}
+
+nav a {
+    color: #1f4b8e;
+    text-decoration: none;
+}
+
+.nav-link {
+    margin: 1rem 1rem;
+}
+
+.active-nav-link {
+    border-bottom: 1px solid #1f4b8e;
+    border-radius: 
+}
+
+#brandName {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1f4b8e;
+    margin: 0 auto;
+}
+
+
+/*-------------------------     MAIN STYLES     -------------------*/
+
+main {
+    text-align: center;
+    margin: 32vh 15%;
+}
+
+.greeting {
+    color: #303030;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+
+
+
+/*----------------------      FOOTER STYLES       -----------------*/
+
+footer {
+    height: 15rem;
+    background-color: #0f1225;
+}
+
+

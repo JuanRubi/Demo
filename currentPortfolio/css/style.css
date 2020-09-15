@@ -43,7 +43,6 @@ nav a {
 
 .active-nav-link {
     border-bottom: 1px solid #1f4b8e;
-    border-radius: 
 }
 
 #brandName {
@@ -107,6 +106,7 @@ main {
 /*------------------        ABOUT STYLES        -------------------*/
 
 form {
+    font-size: 1rem;
     width: 32.2rem;
     margin: 0 auto;
     padding-top: 1rem;
@@ -141,7 +141,49 @@ form {
 
 footer {
     height: 13rem;
+    color: #bbbbbb;
     background-color: #0f1225;
+
+    text-align: center;
+}
+
+h3 {
+    width: 7.3rem;
+    margin: 1rem auto;
+}
+
+.footerLinks {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerNav a{
+    color: #bbbbbb;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+.socialMedia {
+    margin-top: -1rem;
+}
+
+.mediaIcons {
+    display: flex;
+    justify-content: center;
+}
+
+.fa {
+    font-size: 1.5rem;
+    color: #bbbbbb;
+    text-decoration: none;
+    padding: 0rem 0.5rem 1.5rem 0.5rem;
+}
+
+#copyRight {
+    font-size: 1rem;
 }
 
 

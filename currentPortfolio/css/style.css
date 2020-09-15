@@ -2,6 +2,7 @@
 /*------------------         MASTER STYLES       ------------------*/
 
 body {
+    font-size: 1.1rem;
     font-family: 'Lato', sans-serif;
     color: #404040;
     margin: 0;
@@ -88,7 +89,6 @@ main {
 }
 
 .imageCaption {
-    font-size: 1.1rem;
     width: 85%;
     min-width: 250px;
     max-width: 400px;
@@ -101,6 +101,39 @@ main {
 .projectsBody {
     margin: 3rem 15%;
     border: 1px solid black;
+}
+
+
+/*------------------        ABOUT STYLES        -------------------*/
+
+form {
+    width: 32.2rem;
+    margin: 0 auto;
+    padding-top: 1rem;
+
+}
+
+.formWrapper {
+    width: 35rem;
+    height: 34rem;
+    margin: 3rem auto;
+    background-color: #ececec;
+}
+
+.aboutCaption {
+    line-height: 1.7rem;
+    margin: 0 1rem;
+    text-align: left;
+}
+
+.inputLabel {
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.contactBox {
+    font-size: 1rem;
+    line-height: 1.6rem;
 }
 
 

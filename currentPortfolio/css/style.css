@@ -3,6 +3,7 @@
 
 body {
     font-family: 'Lato', sans-serif;
+    color: #404040;
     margin: 0;
     border: 1px solid black;
 }
@@ -13,9 +14,6 @@ body {
 header {
     height: 12rem;
     background-color: #ececec;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 nav {
@@ -27,6 +25,15 @@ nav {
 nav a {
     color: #1f4b8e;
     text-decoration: none;
+}
+
+.navBar {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nav-link {
@@ -50,29 +57,42 @@ nav a {
 
 main {
     text-align: center;
-    margin: 20vh 15%;
+    width: 70%;
+    margin: 13vh auto;
 }
 
 .greeting {
-    color: #303030;
+    font-size: 1.7vw;
 }
 
 .title {
-    font-size: 2.5rem;
+    font-size: 4.5vw;
     font-weight: 700;
     margin-bottom: 0;
 }
 
 .homeImages {
-    width: 100%;
     margin: 3rem auto;
     display: flex;
-    border: 1px solid black;
     justify-content: space-between;
 }
 
+.divideHomeImages {
+    width: 50%;
+}
+
 .homeImage {
-    width: 20rem;
+    width: 85%;
+    min-width: 250px;
+    max-width: 400px;
+}
+
+.imageCaption {
+    font-size: 1.1rem;
+    width: 85%;
+    min-width: 250px;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 
@@ -87,7 +107,7 @@ main {
 /*----------------------      FOOTER STYLES       -----------------*/
 
 footer {
-    height: 15rem;
+    height: 13rem;
     background-color: #0f1225;
 }
 

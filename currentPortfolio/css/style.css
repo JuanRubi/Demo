@@ -50,7 +50,7 @@ nav a {
 
 main {
     text-align: center;
-    margin: 32vh 15%;
+    margin: 20vh 15%;
 }
 
 .greeting {
@@ -63,7 +63,25 @@ main {
     margin-bottom: 0;
 }
 
+.homeImages {
+    width: 100%;
+    margin: 3rem auto;
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-between;
+}
 
+.homeImage {
+    width: 20rem;
+}
+
+
+/*-------------------     PROJECTS STYLES     ---------------------*/
+
+.projectsBody {
+    margin: 3rem 15%;
+    border: 1px solid black;
+}
 
 
 /*----------------------      FOOTER STYLES       -----------------*/

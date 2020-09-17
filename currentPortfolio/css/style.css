@@ -97,10 +97,55 @@ main {
 
 /*-------------------     PROJECTS STYLES     ---------------------*/
 
-.projectsBody {
-    margin: 3rem 15%;
-    border: 1px solid black;
+.technologies {
+    display: flex;
+    justify-content: center;
 }
+
+.techLogo {
+    width: 5rem;
+}
+
+.projectImages {
+    margin: 3rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.separateImages {
+    width: 50%;
+    position: relative;     /* Forces image caption to appear on top of image. */
+    border: 1px solid green;
+}
+
+.separateImages:hover .projectImageCaption,
+.separateImages:focus .projectImageCaption {
+    color: #1f4b8e;
+}
+
+.projectImage {
+    width: 85%;
+    min-width: 250px;
+    max-width: 400px;
+}
+
+.projectImageCaption {
+    position: absolute;
+    top: 3.5vw;
+    text-align: center;
+    padding: 2vw 12vw;
+
+    transition: 0.7s;
+    font-weight: 700;
+    color: transparent;
+}
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+
 
 
 /*------------------        ABOUT STYLES        -------------------*/

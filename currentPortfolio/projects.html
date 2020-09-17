@@ -10,7 +10,6 @@
 </head>
 
 <body>
-
     <header>
         <div class="navBar">
             <div id="brandName">
@@ -45,25 +44,31 @@
                 <p>Samples of my previous work.</p>
             </div>
 
-            <div class="homeImages">
-                <div class="divideHomeImages">
+            <h2>Technologies</h2>
+            <div class="technologies">
+                <img class="techLogo" src="images/html5Logo.png" alt="">
+                <img class="techLogo" src="images/css3Logo.png" alt="">
+                <img class="techLogo" src="images/jsLogo.png" alt="">
+            </div>
+
+            <div class="projectImages">
+                <div class="separateImages">
                     <div>
-                        <img class="homeImage" src="images/miniResponsiveDesign.png" alt="">
+                        <img class="projectImage" src="images/codeScreen.jpg" alt="">
                     </div>
 
-                    <div class="imageCaption">
-                        <p>Experienced with responsive web design. Making sure your website
-                        looks the way you want it to on all devices.</p>
+                    <div class="projectImageCaption">
+                        <p>A responsive blog website.</p>
                     </div>
                 </div>
 
-                <div class="divideHomeImages">
+                <div class="separateImages">
                     <div>
-                        <img class="homeImage" src="images/programming.jpg" alt="">
+                        <img class="projectImage" src="images/stickyNotes.jpg" alt="">
                     </div>
 
-                    <div class="imageCaption">
-                        <p>Building your website with the latest technologies: HTML5 and CSS3.</p>
+                    <div class="projectImageCaption">
+                        <p>A to-do list website with login.</p>
                     </div>
                 </div>
             </div>
@@ -97,4 +102,19 @@
         <p id="copyRight">Copyright &#169 2020 Juan Rosales</p>
     </footer> 
 </body>
+
+<script>
+    // Creating a darkening effect on project images.
+    const projectItems = document.querySelectorAll('.separateImages');
+
+    projectItems.forEach(projectItem => {
+        projectItem.addEventListener('mouseover', () => {
+            projectItem.childNodes[1].classList.add('img-darken');
+        })
+
+        projectItem.addEventListener('mouseout', () => {
+            projectItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
 </html>

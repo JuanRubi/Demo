@@ -52,6 +52,17 @@ nav a {
     margin: 0 auto;
 }
 
+@media (max-width: 800px) {
+    .navBar {
+        padding-top: 0.5rem;
+        flex-direction: column;
+    }
+
+    .nav-link {
+        margin-top: 0rem;
+    }
+}
+
 
 /*-------------------------     MAIN STYLES     -------------------*/
 
@@ -62,11 +73,11 @@ main {
 }
 
 .greeting {
-    font-size: 1.7vw;
+    font-size: 1.2rem;
 }
 
 .title {
-    font-size: 4.5vw;
+    font-size: 3.1rem;
     font-weight: 700;
     margin-bottom: 0;
 }
@@ -94,16 +105,52 @@ main {
     margin: 0 auto;
 }
 
+@media (max-width: 800px) {
+
+    main {
+        width: 95%;
+        margin: 3rem auto
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .greeting {
+        font-size: 1.1rem;
+    }
+
+    .homeImages {
+        flex-direction: column;
+    }
+
+    .homeImage {
+        width: 60%;
+        max-width: 350px;
+        margin-top: 1.5rem;
+    }
+
+    .imageCaption {
+        width: 80%;
+    }
+
+    .divideHomeImages {
+        width: 100%;
+    }
+}
 
 /*-------------------     PROJECTS STYLES     ---------------------*/
 
 .technologies {
+    width: 40%;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
 }
 
 .techLogo {
-    width: 5rem;
+    width: 4rem;
+    margin: 0 1rem;
 }
 
 .projectImages {
@@ -115,7 +162,6 @@ main {
 .separateImages {
     width: 50%;
     position: relative;     /* Forces image caption to appear on top of image. */
-    border: 1px solid green;
 }
 
 .separateImages:hover .projectImageCaption,
@@ -129,7 +175,7 @@ main {
     max-width: 400px;
 }
 
-.projectImageCaption {
+.projectImageCaption {          /* Centers text inside image and creates transition. */
     position: absolute;
     top: 3.5vw;
     text-align: center;
@@ -140,15 +186,24 @@ main {
     color: transparent;
 }
 
-.img-darken {
+.img-darken {           /* Creates darkening effect on project image when hovered over. */
     transition: 1s;
     filter: brightness(10%);
 }
 
+@media (max-width: 800px) {
+    .projectImages {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .separateImages {
+        margin: 1rem 0;
+    }
+}
 
 
-
-/*------------------        ABOUT STYLES        -------------------*/
+/*------------------       CONTACT STYLES        ------------------*/
 
 form {
     font-size: 1rem;
@@ -179,6 +234,12 @@ form {
 .contactBox {
     font-size: 1rem;
     line-height: 1.6rem;
+}
+
+@media (max-width: 700px) {
+    .contactBox {
+        border: 1px solid blue;  
+    }
 }
 
 
@@ -231,4 +292,13 @@ h3 {
     font-size: 1rem;
 }
 
+@media (max-width: 800px) {
+    .footerNav a{
+        display: flex;
+        padding-bottom: 0.5rem;
+    }
 
+    .footerLinks {
+        padding-top: 2rem;
+    }
+}

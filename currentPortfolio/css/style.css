@@ -29,7 +29,6 @@ nav a {
 }
 
 .navBar {
-    width: 80%;
     margin: 0 auto;
     padding-top: 2rem;
     display: flex;
@@ -84,6 +83,7 @@ main {
 
 .homeImages {
     margin: 3rem auto;
+    max-width: 1000px;
     display: flex;
     justify-content: space-between;
 }
@@ -95,7 +95,7 @@ main {
 .homeImage {
     width: 85%;
     min-width: 250px;
-    max-width: 400px;
+    max-width: 375px;
 }
 
 .imageCaption {
@@ -141,6 +141,11 @@ main {
 
 /*-------------------     PROJECTS STYLES     ---------------------*/
 
+h2 {
+    margin: 2rem 0;
+
+}
+
 .technologies {
     width: 40%;
     margin: 0 auto;
@@ -154,6 +159,7 @@ main {
 }
 
 .projectImages {
+    max-width: 1000px;
     margin: 3rem auto;
     display: flex;
     justify-content: space-between;
@@ -177,9 +183,9 @@ main {
 
 .projectImageCaption {          /* Centers text inside image and creates transition. */
     position: absolute;
-    top: 3.5vw;
+    top: 3vh;
     text-align: center;
-    padding: 2vw 12vw;
+    padding: 1vw 7vw;
 
     transition: 0.7s;
     font-weight: 700;
@@ -192,9 +198,27 @@ main {
 }
 
 @media (max-width: 800px) {
+
+    .techLogo {
+        width: 3.5rem;
+        margin: 0 0.5rem;
+    }
+
     .projectImages {
         flex-direction: column;
         align-items: center;
+    }
+
+    .projectImage {
+        width: 95%;
+    }
+
+    .projectImageCaption {
+        width: 71%;
+        min-width: 170px;
+        max-width: 225px;
+        top: 2rem;
+        padding: 1vw 8vw;
     }
 
     .separateImages {
@@ -207,15 +231,18 @@ main {
 
 form {
     font-size: 1rem;
-    width: 32.2rem;
+    width: 85%;
+    min-width: 250px;
+    max-width: 31rem;
     margin: 0 auto;
     padding-top: 1rem;
 
 }
 
 .formWrapper {
-    width: 35rem;
-    height: 34rem;
+    width: 90%;
+    max-width: 38rem;
+    height: 31rem;
     margin: 3rem auto;
     background-color: #ececec;
 }
@@ -233,13 +260,29 @@ form {
 
 .contactBox {
     font-size: 1rem;
+    width: 100%;
     line-height: 1.6rem;
 }
 
-@media (max-width: 700px) {
-    .contactBox {
-        border: 1px solid blue;  
-    }
+#messageBox {
+    width: 100%;
+    min-width: 250px;
+    max-width: 31rem;
+    height: 11rem;
+    min-height: 11rem;
+    max-height: 11rem;
+}
+
+#sendButton {
+    font-size: 0.9rem;
+    height: 2rem;
+    width: 4rem;
+    margin-top: 0.5rem;
+}
+
+#sendButton:hover,
+#sendButton:focus {
+    background-color: #bbbbbb;
 }
 
 
@@ -259,7 +302,8 @@ h3 {
 }
 
 .footerLinks {
-    width: 90%;
+    width: 85%;
+    max-width: 1200px;
     margin: 0 auto;
     padding-top: 3rem;
     display: flex;

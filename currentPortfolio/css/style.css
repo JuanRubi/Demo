@@ -19,7 +19,6 @@ header {
 
 nav {
     font-size: 1.4rem;
-    margin: 0 auto;
     display: flex;
 }
 
@@ -29,6 +28,8 @@ nav a {
 }
 
 .navBar {
+    width: 90%;
+    max-width: 1200px;
     margin: 0 auto;
     padding-top: 2rem;
     display: flex;
@@ -48,7 +49,6 @@ nav a {
     font-size: 2rem;
     font-weight: 700;
     color: #1f4b8e;
-    margin: 0 auto;
 }
 
 @media (max-width: 800px) {
@@ -68,7 +68,7 @@ nav a {
 main {
     text-align: center;
     width: 70%;
-    margin: 13vh auto;
+    margin: 10rem auto;
 }
 
 .greeting {
@@ -143,7 +143,6 @@ main {
 
 h2 {
     margin: 2rem 0;
-
 }
 
 .technologies {
@@ -158,43 +157,48 @@ h2 {
     margin: 0 1rem;
 }
 
-.projectImages {
+.projectsContainer {
     max-width: 1000px;
     margin: 3rem auto;
     display: flex;
     justify-content: space-between;
 }
 
-.separateImages {
-    width: 50%;
-    position: relative;     /* Forces image caption to appear on top of image. */
-}
-
-.separateImages:hover .projectImageCaption,
-.separateImages:focus .projectImageCaption {
-    color: #1f4b8e;
+.project {
+    width: 85%;
 }
 
 .projectImage {
-    width: 85%;
+    width: 80%;
     min-width: 250px;
     max-width: 400px;
 }
 
-.projectImageCaption {          /* Centers text inside image and creates transition. */
-    position: absolute;
-    top: 3vh;
-    text-align: center;
-    padding: 1vw 7vw;
-
-    transition: 0.7s;
-    font-weight: 700;
-    color: transparent;
+.projectButtons {
+    margin: 0.5rem auto;
 }
 
-.img-darken {           /* Creates darkening effect on project image when hovered over. */
-    transition: 1s;
-    filter: brightness(10%);
+.projectButton {
+    width: 80px;
+    font-size: 1rem;
+    height: 2rem;
+    margin-right: 1rem;
+    border: none;
+    border-radius: 12px;
+    background-color: #bbbbbb;
+}
+
+.projectDescription {
+    width: 80%;
+    min-width: 250px;
+    margin: 1rem auto;
+    text-align: left;
+}
+
+.projectButton:hover,
+.projectButton:focus {
+    background-color: #1f4b8e;
+    color: #ececec;
 }
 
 @media (max-width: 800px) {
@@ -204,7 +208,7 @@ h2 {
         margin: 0 0.5rem;
     }
 
-    .projectImages {
+    .projectsContainer {
         flex-direction: column;
         align-items: center;
     }
@@ -213,16 +217,13 @@ h2 {
         width: 95%;
     }
 
-    .projectImageCaption {
-        width: 71%;
-        min-width: 170px;
-        max-width: 225px;
-        top: 2rem;
-        padding: 1vw 8vw;
-    }
+    .projectDescription {
+        width: 80%;
+        margin: 1rem auto;    }
 
     .separateImages {
-        margin: 1rem 0;
+        width: 85%;
+        margin: 1rem auto;
     }
 }
 
@@ -302,7 +303,7 @@ h3 {
 }
 
 .footerLinks {
-    width: 85%;
+    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
     padding-top: 3rem;

@@ -38,7 +38,6 @@
 
     <main>
         <div>
-
             <div class="greeting">
                 <h1 class="title">Projects</h1>
                 <p>Here are samples of my past work.</p>
@@ -51,24 +50,38 @@
                 <img class="techLogo" src="images/jsLogo.png" alt="">
             </div>
 
-            <div class="projectImages">
-                <div class="separateImages">
-                    <div>
-                        <img class="projectImage" src="images/blogEnhanced2.png" alt="">
+            <div class="projectsContainer">
+                <div class="project">
+                    <div class="separateImages">
+                        <img class="projectImage" src="images/blogEnhanced2.png" alt="">  
                     </div>
 
-                    <div class="projectImageCaption">
-                        <p>A responsive blog website.</p>
+                    <div class="projectButtons">
+                        <button class="projectButton" type="button" onclick="location.href='../../Responsive-Web-Design/Web-Page/index.html';">Project</button>
+                        <button class="projectButton" type="button" onclick="location.href='https://github.com/JuanRubi/Responsive-Web-Design/tree/master/Web-Page'">Code</button>
+                    </div>
+
+                    <div>
+                        <p class="projectDescription">With responsive web design principles in mind. I developed my
+                            own personal blog website using HTML and CSS. 
+                        </p>
                     </div>
                 </div>
 
-                <div class="separateImages">
-                    <div>
-                        <img class="projectImage" src="images/toDoEnhanced.png" alt="">
+                <div class="project">
+                    <div class="separateImages">
+                         <img class="projectImage" src="images/toDoEnhanced.png" alt="">      
                     </div>
 
-                    <div class="projectImageCaption">
-                        <p>A to-do list website with login.</p>
+                    <div class="projectButtons">
+                        <button class="projectButton" type="button" onclick="location.href='../../To-Do-List/toDoList.html';">Project</button>
+                        <button class="projectButton" type="button" onclick="location.href='https://github.com/JuanRubi/To-Do-List'">Code</button>
+                    </div>
+
+                    <div class="projectDescription">
+                        <p>Using HTML, CSS and JavaScript I created a to-do list app. Where
+                            users can keep track of their tasks.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -103,18 +116,4 @@
     </footer> 
 </body>
 
-<script>
-    // Creating a darkening effect on project images.
-    const projectItems = document.querySelectorAll('.separateImages');
-
-    projectItems.forEach(projectItem => {
-        projectItem.addEventListener('mouseover', () => {
-            projectItem.childNodes[1].classList.add('img-darken');
-        })
-
-        projectItem.addEventListener('mouseout', () => {
-            projectItem.childNodes[1].classList.remove('img-darken');
-        })
-    })
-</script>
 </html>

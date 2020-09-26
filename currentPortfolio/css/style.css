@@ -266,6 +266,7 @@ form {
 }
 
 #messageBox {
+    font-family: 'Lato', sans-serif;
     width: 100%;
     min-width: 250px;
     max-width: 31rem;
@@ -284,6 +285,10 @@ form {
 #sendButton:hover,
 #sendButton:focus {
     background-color: #bbbbbb;
+}
+
+#error {
+    margin-top: -1rem;
 }
 
 

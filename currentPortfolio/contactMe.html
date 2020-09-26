@@ -47,7 +47,7 @@
             </div>
 
             <div class="formWrapper">
-                <form action="">
+                <form method="POST" action="processContact.php">
                     <div class="formSection">
                         <p class="inputLabel">Your name (required)</p>
                         <input class="contactBox" type="text" name="name">
@@ -65,14 +65,13 @@
     
                     <div class="formSection">
                         <p class="inputLabel">Message (required)</p>
-                        <textarea name="message" id="messageBox"></textarea>
+                        <textarea style="font-size: 1.2rem;" name="message" id="messageBox"></textarea>
                     </div>
+
+                    <input id="sendButton" type="submit">
                 </form>
-                
-                <button id="sendButton" type="submit">Send</button>
             </div>
-
-
+            <p id="error"></p>
         </div>
     </main>
 

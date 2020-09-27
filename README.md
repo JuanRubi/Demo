@@ -1,6 +1,7 @@
 # Portfolio Description
 
-This contatins my portfolio (a work in progress). The image links in the home page are not linked to projects yet.
+This repository contatins my portfolio label as currentPortfolio. Previous iterations
+of my portfolio can also be found.
 
 ## Technologies
 - HTML5

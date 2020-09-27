@@ -1,5 +1,5 @@
 
-/*------------------         MASTER STYLES       ------------------*/
+/*------------------         Master Styles       ------------------*/
 
 body {
     font-size: 1.1rem;
@@ -10,7 +10,7 @@ body {
 }
 
 
-/*-------------         NAVIGATION BAR STYLES       ---------------*/
+/*-------------         Navigation Bar Styles       ---------------*/
 
 header {
     height: 12rem;
@@ -63,7 +63,7 @@ nav a {
 }
 
 
-/*-------------------------     MAIN STYLES     -------------------*/
+/*--------------------     Main Section Styles     ----------------*/
 
 main {
     text-align: center;
@@ -139,7 +139,7 @@ main {
     }
 }
 
-/*-------------------     PROJECTS STYLES     ---------------------*/
+/*-----------------     Projects Section Styles     ---------------*/
 
 h2 {
     margin: 2rem 0;
@@ -228,7 +228,7 @@ h2 {
 }
 
 
-/*------------------       CONTACT STYLES        ------------------*/
+/*---------------       Contact Form Styles        ----------------*/
 
 form {
     font-size: 1rem;
@@ -292,7 +292,7 @@ form {
 }
 
 
-/*----------------------      FOOTER STYLES       -----------------*/
+/*----------------------      Footer Styles       -----------------*/
 
 footer {
     height: 13rem;
